@@ -1,0 +1,78 @@
+{
+  "name": "gemini-pro-studio-frontend",
+  "version": "1.0.0",
+  "description": "Frontend for Gemini Pro Studio",
+  "private": true,
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.14.19",
+    "@mui/material": "^5.14.20",
+    "@mui/x-charts": "^6.18.1",
+    "@mui/x-date-pickers": "^6.18.1",
+    "@reduxjs/toolkit": "^1.9.7",
+    "@tanstack/react-query": "^5.8.4",
+    "@types/node": "^20.19.0",
+    "@types/react": "^18.3.23",
+    "@types/react-dom": "^18.3.7",
+    "axios": "^1.6.2",
+    "dayjs": "^1.11.10",
+    "framer-motion": "^10.16.5",
+    "i18next": "^23.7.6",
+    "moment-jalaali": "^0.10.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-dropzone": "^14.2.3",
+    "react-hook-form": "^7.48.2",
+    "react-hot-toast": "^2.4.1",
+    "react-i18next": "^13.5.0",
+    "react-markdown": "^9.0.1",
+    "react-query": "^3.39.3",
+    "react-redux": "^8.1.3",
+    "react-router-dom": "^6.20.1",
+    "react-scripts": "^5.0.1",
+    "recharts": "^2.8.0",
+    "socket.io-client": "^4.7.4",
+    "typescript": "^4.9.5",
+    "web-vitals": "^3.5.2",
+    "zustand": "^4.4.7"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.7",
+    "@tailwindcss/typography": "^0.5.10",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/jest": "^29.5.14",
+    "@types/react-router-dom": "^5.3.3",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.4",
+    "tailwindcss": "^3.3.6"
+  },
+  "scripts": {
+    "start": "GENERATE_SOURCEMAP=false PORT=3150 DANGEROUSLY_DISABLE_HOST_CHECK=true react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "dev": "npm start"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "proxy": "http://localhost:5150"
+}
