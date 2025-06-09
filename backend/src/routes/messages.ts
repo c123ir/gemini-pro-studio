@@ -1,0 +1,48 @@
+// backend/src/routes/messages.ts
+// مسیرهای مربوط به پیام‌ها
+
+import express from 'express';
+
+const router = express.Router();
+
+/**
+ * @route   POST /api/v1/messages
+ * @desc    ارسال پیام جدید
+ * @access  Private
+ */
+router.post('/', (req, res) => {
+  // TODO: پیاده‌سازی ارسال پیام جدید
+  res.json({ message: 'پیام جدید ارسال شد' });
+});
+
+/**
+ * @route   GET /api/v1/messages/:id
+ * @desc    دریافت جزئیات یک پیام
+ * @access  Private
+ */
+router.get('/:id', (req, res) => {
+  // TODO: پیاده‌سازی دریافت جزئیات پیام
+  res.json({ message: `جزئیات پیام با شناسه ${req.params.id}` });
+});
+
+/**
+ * @route   PUT /api/v1/messages/:id
+ * @desc    به‌روزرسانی یک پیام
+ * @access  Private
+ */
+router.put('/:id', (req, res) => {
+  // TODO: پیاده‌سازی به‌روزرسانی پیام
+  res.json({ message: `پیام با شناسه ${req.params.id} به‌روزرسانی شد` });
+});
+
+/**
+ * @route   DELETE /api/v1/messages/:id
+ * @desc    حذف یک پیام
+ * @access  Private
+ */
+router.delete('/:id', (req, res) => {
+  // TODO: پیاده‌سازی حذف پیام
+  res.json({ message: `پیام با شناسه ${req.params.id} حذف شد` });
+});
+
+export default router; 
